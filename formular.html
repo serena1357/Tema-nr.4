@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formular</title>
+  </head>
+  <body>
+    <h1>Registru - date personale</h1>
+    <form>
+      <div align="right">
+        <label for="gsearch">Cautare:</label>
+        <input type="search" id="gsearch" name="gsearch" placeholder="......" />
+      </div>
+    </form>
+
+    <form>
+      <div>
+        <label for="nume">Nume:</label>
+        <input type="text" id="nume" name="nume" />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="prenume">Prenume:</label>
+        <input type="text" id="prenume" name="prenume" />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="age">Varsta:</label>
+        <input type="number" id="age" name="age" min="18" max="80" />
+      </div>
+
+      <br />
+
+      <div>
+        Gen:
+        <input type="radio" id="gen_feminin" name="gen" value="feminin" />
+        <label for="gen_feminin">Feminin</label>
+        <input type="radio" id="gen_masculin" name="gen" value="masculin" />
+        <label for="gen_masculin">Masculin</label>
+      </div>
+
+      <br />
+
+      <div>
+        <label for="age">Data nasterii:</label>
+        <input type="date" id="date" name="date" />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="appt">Selectati ora:</label>
+        <input type="time" id="appt" name="appt" />
+      </div>
+
+      <div>
+        <p>Religie:</p>
+        <input
+          type="checkbox"
+          id="religion1"
+          name="religion"
+          value="Ortodoxa"
+        />
+        <label for="religion1">Ortodoxa</label><br />
+        <input
+          type="checkbox"
+          id="religion2"
+          name="religion"
+          value="Catolica"
+        />
+        <label for="religion2">Catolica</label><br />
+        <input
+          type="checkbox"
+          id="religion3"
+          name="religion"
+          value="Reformata"
+        />
+        <label for="religion3">Reformata</label><br />
+        <input type="checkbox" id="religion5" name="religion" value="Altele" />
+        <label for="religion4">Altele</label><br />
+      </div>
+
+      <br />
+
+      <fieldset style="width: 700px; height: 65px">
+        <legend>Adresa</legend>
+        <input type="text" name="strada" placeholder="Strada" />
+        <input type="number" name="nr" min="1" placeholder="Nr." />
+        <input type="text" name="bloc" placeholder="Bloc" />
+        <input type="text" name="ap" placeholder="Ap." />
+        <select name="jud" id="jud">
+          <option value="">Selectati judetul</option>
+          <option value="BH">Bihor</option>
+          <option value="CJ">Cluj-Napoca</option>
+          <option value="IF">Ilfov</option>
+          <option value="BV">Brasov</option>
+          <option value="CT">Constanta</option>
+        </select>
+
+        <input
+          type="text"
+          name="oras"
+          id="oras"
+          placeholder="Oras"
+          list="orase"
+        />
+        <datalist id="orase">
+          <option value="Oradea"></option>
+          <option value="Clij-Napoca"></option>
+          <option value="Bucuresti"></option>
+          <option value="Brasov"></option>
+          <option value="Constanta"></option>
+          <option value="Arad"></option>
+          <option value="Deva"></option>
+        </datalist>
+      </fieldset>
+
+      <br />
+
+      <div>
+        <label for="phone">Telefon:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"
+        />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" />
+      </div>
+
+      <br />
+
+      <div>
+        <input type="password" placeholder="Parola" />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="favcolor">Selectati culoarea preferata:</label>
+        <input type="color" id="favcolor" name="favcolor" />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="descriere">Descriere:</label>
+        <textarea name="descriere" id="descriere" cols="20" rows="3"></textarea>
+      </div>
+
+      <br />
+
+      <div align="right">
+        <label for="vol">Cat v-au fost de folos datele?</label>
+        <input type="range" id="vol" name="vol" />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="checkbox">Accept termenii si conditiile</label>
+        <input type="checkbox" id="checkbox" />
+      </div>
+
+      <br />
+
+      <input type="submit" value="Trimite" />
+      <input type="reset" value="Resetare" />
+    </form>
+  </body>
+</html>
